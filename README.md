@@ -22,6 +22,7 @@
 ---
 
 > **FreeTheHomie** is a next-generation fundraising platform with **merchandising storefronts** to fund community causes. Built with **Next.js 15**, **React 19**, and **Radix + shadcn/ui**, it delivers a fast, accessible, mobile-first experience with automated deployment via Vercel.  
+
 ---
 
 <p align="center">
@@ -84,6 +85,7 @@ vercel --prod
 ```
 
 🔧 Configuration
+
 Create a .env.local file with the following:
 
 ```bash
@@ -91,7 +93,7 @@ V0_PROJECT_ID=jb9UThzEonh
 NEXT_PUBLIC_SITE_URL=https://your-vercel-deployment.vercel.app
 ```
 
-# Optional analytics / custom config
+### Optional analytics / custom config
 You can override colors, fonts, and layout via tailwind.config.ts and components.json.
 
 📖 How It Works
