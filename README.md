@@ -3,148 +3,114 @@
 <h1 align="center">FreeTheHomie 🗣️✨</h1>
 
 <p align="center">
-  <b>Intelligent Chat Deployment Platform</b><br/>
-  <a href="https://vercel.com/digital-herencia/free-the-homie">Live Demo</a> • <a href="#features">Features</a> • <a href="#tech-stack">Tech Stack</a> • <a href="#getting-started">Getting Started</a>
+  <b>AI-Powered Fundraising Platform</b><br/>
+  <a href="https://vercel.com/digital-herencia/free-the-homie">Live Demo</a> • 
+  <a href="#-features">Features</a> • 
+  <a href="#-tech-stack">Tech Stack</a> • 
+  <a href="#-getting-started">Getting Started</a> • 
+  <a href="#-configuration">Configuration</a>
 </p>
 
 <p align="center">
   <a href="https://vercel.com/digital-herencia/free-the-homie"><img src="https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel" alt="Vercel"/></a>
   <a href="https://v0.app/chat/projects/jb9UThzEonh"><img src="https://img.shields.io/badge/Built%20with-v0.app-blue?logo=vercel" alt="v0.app"/></a>
-  <img src="https://img.shields.io/badge/Auto--Sync-Enabled-green" alt="Auto-Sync"/>
+  <img src="https://img.shields.io/badge/Next.js-15-black?logo=nextdotjs" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react" alt="React"/>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License"/>
 </p>
 
 ---
 
-> **FreeTheHomie** is an intelligent chat deployment platform that seamlessly bridges the gap between 
-> v0.app development and production deployment. Experience automated synchronization, instant deployments, 
-> and powerful chat interactions. 🚀
+> **FreeTheHomie** is a next-generation fundraising platform with **merchandising storefronts** to fund community causes.  
+> Built with **Next.js 15**, **React 19**, and **Radix + shadcn/ui**, it delivers a fast, accessible, mobile-first experience with automated deployment via Vercel.  
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DigitalHerencia/FreeTheHomie/refs/heads/main/public/freethehomie.png" alt="FreeTheHomie Screenshot" width="100%" style="border-radius:12px;margin:1rem 0;">
+</p>
 
 ---
 
 ## ✨ Features
 
-- **🔄 Auto-Sync:** Seamless synchronization with v0.app deployments
-- **⚡ Instant Deploy:** Real-time deployment pipeline from v0 to Vercel
-- **🗣️ Smart Chat:** AI-powered conversational interfaces
-- **📱 Responsive Design:** Mobile-first, accessible chat experiences
-- **🔐 Secure Integration:** Protected deployment workflows
-- **🛠️ Developer Friendly:** Built-in development and debugging tools
-- **📊 Analytics Ready:** Track engagement and performance metrics
-- **🌗 Modern UI:** Clean, intuitive interface with dark/light mode support
-- **⚙️ Configurable:** Customizable chat behaviors and responses
+- **👕 Fundraising Storefront:** Sell merch or collectibles to support campaigns  
+- **🔄 Auto-Sync:** GitHub + Vercel integration keeps production up-to-date  
+- **📱 Mobile-First UI:** Built with Radix primitives, shadcn/ui, Tailwind 4  
+- **🎨 Theming:** Dark/light mode, brand-consistent design  
+- **📊 Engagement Analytics:** Track visits, chat interactions, conversions  
+- **🔧 Configurable:** Easy environment setup for campaigns, chat flows, and branding  
+- **⚡ Edge-Ready:** Deployed on Vercel Edge for fast global performance  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js (App Router), React, Tailwind CSS
-- **Backend:** Vercel Edge Functions, v0.app Integration
-- **Deployment:** Vercel Platform
-- **Chat Engine:** v0.app AI Chat System
-- **Synchronization:** Automated Git Workflows
-- **Monitoring:** Vercel Analytics
-- **Development:** v0.app Visual Builder
+- **Framework:** Next.js 15 (App Router) + React 19  
+- **UI & Styling:** Tailwind CSS 4, Radix UI, shadcn/ui, Lucide React Icons  
+- **Animations & UX:** Framer Motion, Vaul (drawer/overlay), React Resizable Panels  
+- **Forms & Validation:** React Hook Form, Zod  
+- **State & Theme:** React Context, next-themes  
+- **Charts:** Recharts for engagement insights  
+- **Build & Deploy:** Vercel CI/CD, GitHub Actions (optional)  
+- **Other Tools:** Sonner (toasts), date-fns (formatting), cmdk (command palette)  
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+- Node.js 18+  
+- pnpm or npm (project ships with pnpm lockfile)  
+- Vercel account linked to your GitHub repo  
+- v0.app project for AI chat integration  
 
-- v0.app account
-- Vercel account (connected to GitHub)
-- Git knowledge for version control
-
-### Quickstart
-
-1. **Create your chat** on [v0.app](https://v0.app)
-2. **Deploy from v0** using the deployment interface
-3. **Automatic sync** to this repository happens instantly
-4. **Live deployment** via Vercel at your custom URL
+### Quick Start
 
 ```bash
-# Fork this repository
-git clone https://github.com/your-username/FreeTheHomie.git
+git clone https://github.com/DigitalHerencia/FreeTheHomie.git
 cd FreeTheHomie
+pnpm install
+pnpm dev
+```
 
-# Connect to your v0.app project
-# Visit: https://v0.app/chat/projects/jb9UThzEonh
+Visit http://localhost:3000 to see the storefront running locally.
 
-# Deploy to Vercel
+### Production Deployment
+
+```bash
+Copy code
+pnpm build
+pnpm start   # or deploy via Vercel CLI
 vercel --prod
 ```
 
-Open your deployment URL to see your chat in action!
-
-### Development Workflow
-
-```bash
-# Make changes in v0.app visual editor
-# → Auto-sync to GitHub repository
-# → Auto-deploy to Vercel
-# → Live updates available instantly
-```
-
----
-
-## 🔧 Configuration
-
-### Environment Variables
+🔧 Configuration
+Create a .env.local file with the following:
 
 ```bash
-# Optional: Custom deployment settings
-VERCEL_PROJECT_ID=your-project-id
 V0_PROJECT_ID=jb9UThzEonh
+NEXT_PUBLIC_SITE_URL=https://your-vercel-deployment.vercel.app
 ```
 
-### Customization
+# Optional analytics / custom config
+You can override colors, fonts, and layout via tailwind.config.ts and components.json.
 
-- **Chat Behavior:** Modify responses in v0.app editor
-- **Styling:** Update themes through v0.app interface
-- **Deployment:** Configure Vercel settings for custom domains
+📖 How It Works
 
----
+1. Design chat flows in v0.app visual builder
+2. Push changes → repo auto-syncs → Vercel deploys latest build
+3. Users interact with your AI-powered chat + storefront
+4. Engagement data can be visualized with built-in analytics components
 
-## 📖 How It Works
+🤝 Contributing
 
-1. **🎨 Design** your chat interface using [v0.app](https://v0.app) visual editor
-2. **🚀 Deploy** directly from v0.app with one-click deployment
-3. **🔄 Sync** changes are automatically pushed to this GitHub repository
-4. **⚡ Live** Vercel deploys the latest version instantly
-5. **📊 Monitor** performance and user interactions through analytics
+Contributions welcome!
+  - Branch Naming: feature/<feature>, fix/<issue>
+  - Commit Style: Conventional commits (feat:, fix:, docs:)
+  - Testing: Manual and automated tests before PR submission
 
----
+📝 License
 
-## 🆘 Help & Support
+MIT License – see LICENSE for details.
 
-- **Live Chat:** [Experience FreeTheHomie](https://vercel.com/digital-herencia/free-the-homie)
-- **v0.app Editor:** [Continue Building](https://v0.app/chat/projects/jb9UThzEonh)
-- **Documentation:** See `/docs` for advanced configuration
-- **Issues:** Report bugs and request features via GitHub Issues
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Guidelines
-
-- **Branch Names**: `feature/chat-enhancement`, `fix/sync-issue`, `docs/update-readme`
-- **Commit Messages**: `feat: add new chat feature` or `fix: resolve sync timing`
-- **Testing**: Verify changes work in both v0.app and deployed environment
-
----
-
-## 📝 License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-<p align="center">
-  <b>FreeTheHomie – Liberating Conversations Through Intelligent Chat 🗣️✨</b>
-</p>
-
-<!-- End of README -->
+<p align="center"> <b>FreeTheHomie – Fund the Movement. Deploy the Future. 🗣️✨</b> </p> 
