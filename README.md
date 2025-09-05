@@ -21,8 +21,7 @@
 
 ---
 
-> **FreeTheHomie** is a next-generation fundraising platform with **merchandising storefronts** to fund community causes.  
-> Built with **Next.js 15**, **React 19**, and **Radix + shadcn/ui**, it delivers a fast, accessible, mobile-first experience with automated deployment via Vercel.  
+> **FreeTheHomie** is a next-generation fundraising platform with **merchandising storefronts** to fund community causes. Built with **Next.js 15**, **React 19**, and **Radix + shadcn/ui**, it delivers a fast, accessible, mobile-first experience with automated deployment via Vercel.  
 ---
 
 <p align="center">
